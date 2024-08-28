@@ -14,10 +14,6 @@ func isPalindrome(s string) bool {
     leftPointer := 0
     rightPointer := len(s) - 1
 
-    if s == "" {
-        return true
-    }
-
     for leftPointer < rightPointer {
 
         for leftPointer < len(s) - 1 && !isAlphaNumeric(s[leftPointer]) {
